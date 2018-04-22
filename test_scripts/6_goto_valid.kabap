@@ -1,0 +1,3 @@
+goto end;
+return = "Fail";
+:end;

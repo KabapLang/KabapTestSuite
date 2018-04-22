@@ -1,0 +1,2 @@
+test.var = "Pass";
+return = test.var;

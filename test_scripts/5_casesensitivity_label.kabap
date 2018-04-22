@@ -1,0 +1,4 @@
+return = "Pass";
+goto A;
+return = "Fail";
+:a;
