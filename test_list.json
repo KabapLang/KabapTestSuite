@@ -2612,14 +2612,25 @@
 			"description": "Parser read a file with only 1-line header having duplicate invalid and valid properties"
 		},
 		{
-			"filename": "9_kitchen_sink.kt",
+			"filename": "9_kitchen_sink_unminified.kt",
 			"success": true,
 			"stdout": ">4 ✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓",
 			"stderr": "",
 			"extensions": [],
 			"watchdog": -1,
 			"author": "WLD-PJ",
-			"updated": "2018-02-23 15:40:00",
+			"updated": "2018-04-30 01:26:45",
+			"description": "Complex testing every part of language in one token file"
+		},
+		{
+			"filename": "9_kitchen_sink_minified.kt",
+			"success": true,
+			"stdout": ">4 ✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓",
+			"stderr": "",
+			"extensions": [],
+			"watchdog": -1,
+			"author": "WLD-PJ",
+			"updated": "2018-04-30 01:26:45",
 			"description": "Complex testing every part of language in one token file"
 		}
 	]
