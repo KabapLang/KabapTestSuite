@@ -2381,7 +2381,7 @@
 		{
 			"filename": "9_99_bottles_of_beer.kabap",
 			"success": true,
-			"stdout": "3 bottles of beer on the wall, 3 bottles of beer. Take one down, pass it around, 2 bottles of beer on the wall...  2 bottles of beer on the wall, 2 bottles of beer. Take one down, pass it around, 1 bottles of beer on the wall...  1 bottles of beer on the wall, 1 bottles of beer. Take one down, pass it around, 0 bottles of beer on the wall...  ",
+			"stdout": "3 bottles of beer on the wall, 3 bottles of beer. Take one down, pass it around, 2 bottles of beer on the wall…  2 bottles of beer on the wall, 2 bottles of beer. Take one down, pass it around, 1 bottles of beer on the wall…  1 bottles of beer on the wall, 1 bottles of beer. Take one down, pass it around, 0 bottles of beer on the wall…  ",
 			"stderr": "",
 			"extensions": [],
 			"watchdog": -1,
@@ -2436,7 +2436,7 @@
 			"description": "Re-run extensions; this script is specifically designed for another unit test"
 		},
 		{
-			"filename": "1_tokens_empty.kt",
+			"filename": "1_tokens_empty.kat",
 			"success": false,
 			"stdout": "",
 			"stderr": "",
@@ -2447,7 +2447,7 @@
 			"description": "Parser read an empty file"
 		},
 		{
-			"filename": "1_tokens_invalid_header1.kt",
+			"filename": "1_tokens_invalid_header1.kat",
 			"success": false,
 			"stdout": "",
 			"stderr": "",
@@ -2458,7 +2458,7 @@
 			"description": "Parser read a file without a recognisable start header"
 		},
 		{
-			"filename": "1_tokens_invalid_header2.kt",
+			"filename": "1_tokens_invalid_header2.kat",
 			"success": false,
 			"stdout": "",
 			"stderr": "",
@@ -2469,7 +2469,7 @@
 			"description": "Parser read a file with a partially recognisable start header"
 		},
 		{
-			"filename": "1_tokens_invalid_all_duplicate.kt",
+			"filename": "1_tokens_invalid_all_duplicate.kat",
 			"success": false,
 			"stdout": "",
 			"stderr": "",
@@ -2477,10 +2477,10 @@
 			"watchdog": -1,
 			"author": "WLD-PJ",
 			"updated": "2018-02-23 15:40:00",
-			"description": "Parser read a file with only 1-line header having duplicate valid and invalid properties"
+			"description": "Parser read a file with only 1-line header having duplicate valid and invalid predicates"
 		},
 		{
-			"filename": "1_tokens_invalid_identifier_missing.kt",
+			"filename": "1_tokens_invalid_identifier_missing.kat",
 			"success": false,
 			"stdout": "",
 			"stderr": "",
@@ -2491,7 +2491,7 @@
 			"description": "Parser read a file with only 1-line header identifier missing"
 		},
 		{
-			"filename": "1_tokens_invalid_identifier_wrong.kt",
+			"filename": "1_tokens_invalid_identifier_wrong.kat",
 			"success": false,
 			"stdout": "",
 			"stderr": "",
@@ -2502,7 +2502,7 @@
 			"description": "Parser read a file with only 1-line header identifier incorrect"
 		},
 		{
-			"filename": "1_tokens_invalid_version_missing.kt",
+			"filename": "1_tokens_invalid_version_missing.kat",
 			"success": false,
 			"stdout": "",
 			"stderr": "",
@@ -2513,7 +2513,7 @@
 			"description": "Parser read a file with only 1-line header version missing"
 		},
 		{
-			"filename": "1_tokens_invalid_version_zero.kt",
+			"filename": "1_tokens_invalid_version_zero.kat",
 			"success": false,
 			"stdout": "",
 			"stderr": "",
@@ -2524,7 +2524,7 @@
 			"description": "Parser read a file with only 1-line header version 0"
 		},
 		{
-			"filename": "1_tokens_invalid_version_big.kt",
+			"filename": "1_tokens_invalid_version_big.kat",
 			"success": false,
 			"stdout": "",
 			"stderr": "",
@@ -2535,7 +2535,7 @@
 			"description": "Parser read a file with only 1-line header version 99"
 		},
 		{
-			"filename": "1_tokens_invalid_version_negative.kt",
+			"filename": "1_tokens_invalid_version_negative.kat",
 			"success": false,
 			"stdout": "",
 			"stderr": "",
@@ -2546,7 +2546,7 @@
 			"description": "Parser read a file with only 1-line header version negative"
 		},
 		{
-			"filename": "1_tokens_invalid_version_doubled.kt",
+			"filename": "1_tokens_invalid_version_doubled.kat",
 			"success": false,
 			"stdout": "",
 			"stderr": "",
@@ -2557,7 +2557,7 @@
 			"description": "Parser read a file with only 1-line header version invalid"
 		},
 		{
-			"filename": "1_tokens_invalid_utf8_missing.kt",
+			"filename": "1_tokens_invalid_utf8_missing.kat",
 			"success": false,
 			"stdout": "",
 			"stderr": "",
@@ -2568,7 +2568,7 @@
 			"description": "Parser read a file with only 1-line header UTF8 missing"
 		},
 		{
-			"filename": "1_tokens_invalid_utf8_wrong.kt",
+			"filename": "1_tokens_invalid_utf8_wrong.kat",
 			"success": false,
 			"stdout": "",
 			"stderr": "",
@@ -2579,7 +2579,7 @@
 			"description": "Parser read a file with only 1-line header UTF8 incorrect"
 		},
 		{
-			"filename": "1_tokens_valid_1line_min.kt",
+			"filename": "1_tokens_valid_1line_min.kat",
 			"success": true,
 			"stdout": "",
 			"stderr": "",
@@ -2587,10 +2587,10 @@
 			"watchdog": -1,
 			"author": "WLD-PJ",
 			"updated": "2018-02-23 15:40:00",
-			"description": "Parser read a file with only 1-line header minimum required properties"
+			"description": "Parser read a file with only 1-line header minimum required predicates"
 		},
 		{
-			"filename": "1_tokens_valid_1line_max.kt",
+			"filename": "1_tokens_valid_1line_max.kat",
 			"success": true,
 			"stdout": "",
 			"stderr": "",
@@ -2598,10 +2598,10 @@
 			"watchdog": -1,
 			"author": "WLD-PJ",
 			"updated": "2018-02-23 15:40:00",
-			"description": "Parser read a file with only 1-line header maximum recognised and extraneous properties"
+			"description": "Parser read a file with only 1-line header maximum recognised and extraneous predicates"
 		},
 		{
-			"filename": "1_tokens_valid_all_duplicate.kt",
+			"filename": "1_tokens_valid_all_duplicate.kat",
 			"success": true,
 			"stdout": "",
 			"stderr": "",
@@ -2609,10 +2609,10 @@
 			"watchdog": -1,
 			"author": "WLD-PJ",
 			"updated": "2018-02-23 15:40:00",
-			"description": "Parser read a file with only 1-line header having duplicate invalid and valid properties"
+			"description": "Parser read a file with only 1-line header having duplicate invalid and valid predicates"
 		},
 		{
-			"filename": "9_kitchen_sink_unminified.kt",
+			"filename": "9_kitchen_sink_unminified.kat",
 			"success": true,
 			"stdout": ">4 ✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓",
 			"stderr": "",
@@ -2623,7 +2623,7 @@
 			"description": "Complex testing every part of language in one token file"
 		},
 		{
-			"filename": "9_kitchen_sink_minified.kt",
+			"filename": "9_kitchen_sink_minified.kat",
 			"success": true,
 			"stdout": ">4 ✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓",
 			"stderr": "",

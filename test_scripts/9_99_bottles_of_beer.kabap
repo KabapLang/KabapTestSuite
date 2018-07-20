@@ -4,7 +4,7 @@ $n = 3;
 $out = "";
 
 :loop;
-	$out = $out << $n << " bottles of beer on the wall, " << $n << " bottles of beer. Take one down, pass it around, " << $n - 1 << " bottles of beer on the wall...  ";
+	$out = $out << $n << " bottles of beer on the wall, " << $n << " bottles of beer. Take one down, pass it around, " << $n - 1 << " bottles of beer on the wall…  ";
 	$n = $n - 1;
 	if $n > 0;
 		goto loop;

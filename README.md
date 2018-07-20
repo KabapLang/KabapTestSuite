@@ -42,7 +42,7 @@ All test files are prefixed with a character followed by an underscore.  This ch
 	9  	language (complex examples)
 	a  	re-runs, reuses and recycles
 
-Human readable script files always end with the file-extension suffix *.kabap* and tokenised files always end with the suffix *.kt*
+Human readable script files always end with the file-extension suffix *.kabap* and tokenised files always end with the suffix *.kat*
 
 
 ## Test guidelines
@@ -61,7 +61,7 @@ All tests that are not considered a complex example (tests prefixed *9_*) will *
 
 
 ## Testing the test suite
-Each platform specific unit tester should include a test to ensure that every *.kabap* and *.kt* file found in this test suite is included somewhere in the list of tests specified in the JSON file.  This is to prevent the accidental addition of any non-exercised tests, as well as to prevent the accumulation of file cruft from any removed tests.
+Each platform specific unit tester should include a test to ensure that every *.kabap* and *.kat* file found in this test suite is included somewhere in the list of tests specified in the JSON file.  This is to prevent the accidental addition of any non-exercised tests, as well as to prevent the accumulation of file cruft from any removed tests.
 
 The JSON test list includes a UTF-8 hint called "utf8" as the first key.  The value of this key is the Unicode tick/check mark U+2713: ``✓``
 Usually editors will automatically detect this and default to UTF-8 encoding, but please check this whenever editing the file.  Some test results have non-ASCII characters and editing the test list in another encoding will likely corrupt these and produce false-negative failed tests.
