@@ -874,6 +874,17 @@
 			"description": "Language flow conditional rejects no condition"
 		},
 		{
+			"filename": "6_if_condition_multiple.kabap",
+			"success": false,
+			"stdout": "",
+			"stderr": "Line 1: Only 1 if condition can be evaluated",
+			"extensions": [],
+			"watchdog": -1,
+			"author": "WLD-PJ",
+			"updated": "2018-07-24 12:04:17",
+			"description": "Language flow conditional rejects more than 1 condition"
+		},
+		{
 			"filename": "6_if_condition_invalid_block1.kabap",
 			"success": false,
 			"stdout": "",
@@ -984,6 +995,39 @@
 			"description": "Language flow conditional accepts true from reference"
 		},
 		{
+			"filename": "6_if_condition_true7.kabap",
+			"success": true,
+			"stdout": "Pass",
+			"stderr": "",
+			"extensions": [],
+			"watchdog": -1,
+			"author": "WLD-PJ",
+			"updated": "2018-07-24 12:11:27",
+			"description": "Language flow conditional accepts true from comparator operator"
+		},
+		{
+			"filename": "6_if_condition_true8.kabap",
+			"success": true,
+			"stdout": "Pass",
+			"stderr": "",
+			"extensions": [],
+			"watchdog": -1,
+			"author": "WLD-PJ",
+			"updated": "2018-07-24 12:13:43",
+			"description": "Language flow conditional accepts true from comparator operator"
+		},
+		{
+			"filename": "6_if_condition_true9.kabap",
+			"success": true,
+			"stdout": "Pass",
+			"stderr": "",
+			"extensions": [],
+			"watchdog": -1,
+			"author": "WLD-PJ",
+			"updated": "2018-07-24 12:15:05",
+			"description": "Language flow conditional accepts true from concatenate operator"
+		},
+		{
 			"filename": "6_if_condition_false1.kabap",
 			"success": true,
 			"stdout": "",
@@ -1026,6 +1070,39 @@
 			"author": "WLD-PJ",
 			"updated": "2018-02-23 15:40:00",
 			"description": "Language flow conditional accepts false from string 0"
+		},
+		{
+			"filename": "6_if_condition_false5.kabap",
+			"success": true,
+			"stdout": "",
+			"stderr": "",
+			"extensions": [],
+			"watchdog": -1,
+			"author": "WLD-PJ",
+			"updated": "2018-07-24 12:16:40",
+			"description": "Language flow conditional accepts false from comparator operator"
+		},
+		{
+			"filename": "6_if_condition_false6.kabap",
+			"success": true,
+			"stdout": "",
+			"stderr": "",
+			"extensions": [],
+			"watchdog": -1,
+			"author": "WLD-PJ",
+			"updated": "2018-07-24 12:18:51",
+			"description": "Language flow conditional accepts false from comparator operator"
+		},
+		{
+			"filename": "6_if_condition_false7.kabap",
+			"success": true,
+			"stdout": "",
+			"stderr": "",
+			"extensions": [],
+			"watchdog": -1,
+			"author": "WLD-PJ",
+			"updated": "2018-07-24 12:19:07",
+			"description": "Language flow conditional accepts false from concatenate operator"
 		},
 		{
 			"filename": "6_if_true_block.kabap",
