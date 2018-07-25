@@ -1820,40 +1820,95 @@
 			"description": "Language operators are not found in non-operator contexts"
 		},
 		{
-			"filename": "7_assignment_norvalue.kabap",
+			"filename": "7_assignment_lrv_invalid_novalue.kabap",
 			"success": false,
 			"stdout": "",
-			"stderr": "Line 1: Assignment expects a right-hand value",
+			"stderr": "Line 1: Assignment expects 1 left-hand value",
 			"extensions": [],
 			"watchdog": -1,
 			"author": "WLD-PJ",
-			"updated": "2018-02-23 15:40:00",
-			"description": "Language operator assignment missing right operand"
+			"updated": "2018-07-24 11:20:46",
+			"description": "Language operator assignment missing left and right operand"
 		},
 		{
-			"filename": "7_assignment_multiples.kabap",
+			"filename": "7_assignment_lv_invalid_novalue.kabap",
 			"success": false,
 			"stdout": "",
-			"stderr": "Line 1: Only 1 assignment can be in a statement",
+			"stderr": "Line 1: Assignment expects 1 left-hand value",
 			"extensions": [],
 			"watchdog": -1,
 			"author": "WLD-PJ",
-			"updated": "2018-02-23 15:40:00",
-			"description": "Language operator assignment right operand contains assignment"
+			"updated": "2018-07-24 11:21:03",
+			"description": "Language operator assignment missing left operand"
 		},
 		{
-			"filename": "7_assignment_extraneous.kabap",
+			"filename": "7_assignment_lv_invalid_extraneous.kabap",
 			"success": false,
 			"stdout": "",
-			"stderr": "Line 1: Assignment takes only one right-hand value",
+			"stderr": "Line 1: Assignment expects 1 left-hand value",
 			"extensions": [],
 			"watchdog": -1,
 			"author": "WLD-PJ",
-			"updated": "2018-02-23 15:40:00",
-			"description": "Language operator assignment multiple right operands"
+			"updated": "2018-07-24 11:22:17",
+			"description": "Language operator assignment multiple left operands"
 		},
 		{
-			"filename": "7_assignment_comparison.kabap",
+			"filename": "7_assignment_lv_invalid_label.kabap",
+			"success": false,
+			"stdout": "",
+			"stderr": "Line 1: Assignment left-hand value must be a variable or reference",
+			"extensions": [],
+			"watchdog": -1,
+			"author": "WLD-PJ",
+			"updated": "2018-07-24 11:24:58",
+			"description": "Language operator assignment left operand contains label"
+		},
+		{
+			"filename": "7_assignment_lv_invalid_flow.kabap",
+			"success": false,
+			"stdout": "",
+			"stderr": "Line 1: Expected label after goto",
+			"extensions": [],
+			"watchdog": -1,
+			"author": "WLD-PJ",
+			"updated": "2018-07-24 11:25:56",
+			"description": "Language operator assignment left operand contains flow"
+		},
+		{
+			"filename": "7_assignment_lv_invalid_block.kabap",
+			"success": false,
+			"stdout": "",
+			"stderr": "Line 1: Assignment expects 1 left-hand value",
+			"extensions": [],
+			"watchdog": -1,
+			"author": "WLD-PJ",
+			"updated": "2018-07-24 11:10:22",
+			"description": "Language operator assignment left operand contains block"
+		},
+		{
+			"filename": "7_assignment_lv_invalid_immutable1.kabap",
+			"success": false,
+			"stdout": "",
+			"stderr": "Line 1: Assignment left-hand value must be a variable or reference",
+			"extensions": [],
+			"watchdog": -1,
+			"author": "WLD-PJ",
+			"updated": "2018-07-24 11:33:57",
+			"description": "Language operator assignment left operand contains immutable constant"
+		},
+		{
+			"filename": "7_assignment_lv_invalid_immutable2.kabap",
+			"success": false,
+			"stdout": "",
+			"stderr": "Line 1: Assignment left-hand value must be a variable or reference",
+			"extensions": [],
+			"watchdog": -1,
+			"author": "WLD-PJ",
+			"updated": "2018-07-24 11:48:08",
+			"description": "Language operator assignment left operand contains immutable constant"
+		},
+		{
+			"filename": "7_assignment_rv_valid_comparison.kabap",
 			"success": true,
 			"stdout": "",
 			"stderr": "",
@@ -1864,7 +1919,51 @@
 			"description": "Language operator assignment right operand contains comparator operator"
 		},
 		{
-			"filename": "7_assignment_invalid_label.kabap",
+			"filename": "7_assignment_rv_valid_operators.kabap",
+			"success": true,
+			"stdout": "foobar",
+			"stderr": "",
+			"extensions": [],
+			"watchdog": -1,
+			"author": "WLD-PJ",
+			"updated": "2018-02-23 15:40:00",
+			"description": "Language operator assignment right operand contains concatenate operator"
+		},
+		{
+			"filename": "7_assignment_rv_invalid_novalue.kabap",
+			"success": false,
+			"stdout": "",
+			"stderr": "Line 1: Assignment expects a right-hand value",
+			"extensions": [],
+			"watchdog": -1,
+			"author": "WLD-PJ",
+			"updated": "2018-02-23 15:40:00",
+			"description": "Language operator assignment missing right operand"
+		},
+		{
+			"filename": "7_assignment_rv_invalid_multiple.kabap",
+			"success": false,
+			"stdout": "",
+			"stderr": "Line 1: Only 1 assignment can be in a statement",
+			"extensions": [],
+			"watchdog": -1,
+			"author": "WLD-PJ",
+			"updated": "2018-02-23 15:40:00",
+			"description": "Language operator assignment right operand contains assignment"
+		},
+		{
+			"filename": "7_assignment_rv_invalid_extraneous.kabap",
+			"success": false,
+			"stdout": "",
+			"stderr": "Line 1: Assignment takes only one right-hand value",
+			"extensions": [],
+			"watchdog": -1,
+			"author": "WLD-PJ",
+			"updated": "2018-02-23 15:40:00",
+			"description": "Language operator assignment multiple right operands"
+		},
+		{
+			"filename": "7_assignment_rv_invalid_label.kabap",
 			"success": false,
 			"stdout": "",
 			"stderr": "Line 1: A label must be in its own statement",
@@ -1875,7 +1974,7 @@
 			"description": "Language operator assignment right operand contains label"
 		},
 		{
-			"filename": "7_assignment_invalid_flow.kabap",
+			"filename": "7_assignment_rv_invalid_flow.kabap",
 			"success": false,
 			"stdout": "",
 			"stderr": "Line 1: Assignment cannot contain a flow",
@@ -1886,15 +1985,15 @@
 			"description": "Language operator assignment right operand contains flow"
 		},
 		{
-			"filename": "7_assignment_valid_operators.kabap",
-			"success": true,
-			"stdout": "foobar",
-			"stderr": "",
+			"filename": "7_assignment_rv_invalid_block.kabap",
+			"success": false,
+			"stdout": "",
+			"stderr": "Line 1: Missing statement",
 			"extensions": [],
 			"watchdog": -1,
 			"author": "WLD-PJ",
-			"updated": "2018-02-23 15:40:00",
-			"description": "Language operator assignment right operand contains concatenate operator"
+			"updated": "2018-07-24 11:10:22",
+			"description": "Language operator assignment right operand contains block"
 		},
 		{
 			"filename": "7_variable_undefined.kabap",
