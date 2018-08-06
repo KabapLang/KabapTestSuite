@@ -51,13 +51,13 @@ When using or creating tests please ensure they follow the following guidelines.
 ### Unicode
 Kabap is fully Unicode and uses UTF-8 by default, without the Byte Order Mark (BOM).  All test files, strings and implementations should expect and require this encoding.
 
-### White space
-Kabap is a free-form language where white space is optional and ignored.  Unless the test is specifically exercising the processing of white space (usually tests prefixed with *1_*) then all tests use the original authors' preference of a single space separating the different components of a statement; and conditions and loops are indented by tabs.
+### Whitespace
+Kabap is a free-form language where whitespace is optional and ignored.  Unless the test is specifically exercising the processing of whitespace (usually tests prefixed with *1_*) then all tests use the original authors' preference of a single space separating the different components of a statement; and conditions and loops are indented by tabs.
 
 ### Line endings
 All tests that span multiple lines use UNIX line endings ``\n (LF, ASCII 10)`` unless they are specifically exercising the processing of Windows and classic Mac line endings.
 
-All tests that are not considered a complex example (tests prefixed *9_*) will **not** end with a trailing newline character unless it is trailing white space which is being tested.  This makes *NIX systems report the files as having incomplete lines.  As line endings are something the parser has to process it was felt that removing everything unnecessary except that which is being tested would be beneficial to create minimal tests.  Be sure to test if your editor automatically adds a trailing line ending.
+All tests that are not considered a complex example (tests prefixed *9_*) will **not** end with a trailing newline character unless it is trailing whitespace which is being tested.  This makes *NIX systems report the files as having incomplete lines.  As line endings are something the parser has to process it was felt that removing everything unnecessary except that which is being tested would be beneficial to create minimal tests.  Be sure to test if your editor automatically adds a trailing line ending.
 
 
 ## Testing the test suite

@@ -764,26 +764,26 @@
 		{
 			"filename": "5_casesensitivity_reference.kabap",
 			"success": true,
-			"stdout": "",
+			"stdout": "Pass",
 			"stderr": "",
 			"extensions": [
-				"UnitTestExtension"
+				"KabapTestExtension"
 			],
 			"watchdog": -1,
 			"author": "WLD-PJ",
-			"updated": "2018-02-23 15:40:00",
+			"updated": "2018-08-06 01:33:20",
 			"description": "Resolver being case insensitive for reference"
 		},
 		{
-			"filename": "5_casesensitivity_kabap_extension.kabap",
+			"filename": "5_casesensitivity_extension.kabap",
 			"success": true,
 			"stdout": "0",
 			"stderr": "",
 			"extensions": [],
 			"watchdog": -1,
 			"author": "WLD-PJ",
-			"updated": "2018-02-23 15:40:00",
-			"description": "Resolver being case insensitive for Kabap extension"
+			"updated": "2018-07-31 17:33:07",
+			"description": "Resolver being case insensitive for extension"
 		},
 		{
 			"filename": "6_break_valid.kabap",
@@ -2222,6 +2222,32 @@
 			"description": "Language reference unknown called"
 		},
 		{
+			"filename": "8_reference_call_defined_invalid1.kabap",
+			"success": false,
+			"stdout": "",
+			"stderr": "Line 1: KabapTestExtension requires references to start with: test.",
+			"extensions": [
+				"KabapTestExtension"
+			],
+			"watchdog": -1,
+			"author": "WLD-PJ",
+			"updated": "2018-08-06 01:57:33",
+			"description": "Language reference known called invalid no dot"
+		},
+		{
+			"filename": "8_reference_call_defined_invalid2.kabap",
+			"success": false,
+			"stdout": "",
+			"stderr": "Line 1: KabapTestExtension requires references to have only 1 dot",
+			"extensions": [
+				"KabapTestExtension"
+			],
+			"watchdog": -1,
+			"author": "WLD-PJ",
+			"updated": "2018-08-06 01:57:48",
+			"description": "Language reference known called invalid double dot"
+		},
+		{
 			"filename": "8_reference_read_valid.kabap",
 			"success": true,
 			"stdout": "1.0",
@@ -2263,7 +2289,7 @@
 		{
 			"filename": "8_reference_read_multicall_all.kabap",
 			"success": true,
-			"stdout": "ALPHA BETA ",
+			"stdout": "ALPHA ",
 			"stderr": "",
 			"extensions": [
 				"KabapTestExtension",
@@ -2271,13 +2297,13 @@
 			],
 			"watchdog": -1,
 			"author": "WLD-PJ",
-			"updated": "2018-02-23 15:40:00",
+			"updated": "2018-08-06 01:18:06",
 			"description": "Language reference multiple known called and returned"
 		},
 		{
 			"filename": "8_reference_read_multicall_all.kabap",
 			"success": true,
-			"stdout": "BETA ",
+			"stdout": "BETA ALPHA ",
 			"stderr": "",
 			"extensions": [
 				"UnitTestExtension",
@@ -2285,7 +2311,7 @@
 			],
 			"watchdog": -1,
 			"author": "WLD-PJ",
-			"updated": "2018-02-23 15:40:00",
+			"updated": "2018-08-06 01:17:54",
 			"description": "Language reference multiple known called and returned in reverse order (same as above but extension load order reversed)"
 		},
 		{
@@ -2353,19 +2379,41 @@
 			],
 			"watchdog": -1,
 			"author": "WLD-PJ",
-			"updated": "2018-02-23 15:40:00",
-			"description": "Language reference write value which is rejected"
+			"updated": "2018-08-06 01:35:05",
+			"description": "Language reference write value which is immutable rejected"
 		},
 		{
 			"filename": "8_reference_write_invalid2.kabap",
 			"success": false,
 			"stdout": "",
-			"stderr": "Line 1: Reference not found: kabap.random",
+			"stderr": "Line 1: kabap.random is read only",
 			"extensions": [],
 			"watchdog": -1,
 			"author": "WLD-PJ",
-			"updated": "2018-02-23 15:40:00",
-			"description": "Language reference write value which is accepted"
+			"updated": "2018-08-06 01:16:21",
+			"description": "Language reference write value which is read-only rejected"
+		},
+		{
+			"filename": "8_reference_write_invalid3.kabap",
+			"success": false,
+			"stdout": "",
+			"stderr": "Line 1: kabap.version is read only",
+			"extensions": [],
+			"watchdog": -1,
+			"author": "WLD-PJ",
+			"updated": "2018-08-06 01:16:05",
+			"description": "Language reference write value which is read-only rejected"
+		},
+		{
+			"filename": "8_reference_write_invalid4.kabap",
+			"success": false,
+			"stdout": "",
+			"stderr": "Line 1: Reference not found: kabap.nothing",
+			"extensions": [],
+			"watchdog": -1,
+			"author": "WLD-PJ",
+			"updated": "2018-08-06 01:16:43",
+			"description": "Language reference write value which is unknown rejected"
 		},
 		{
 			"filename": "8_kabap_scale_0dp.kabap",
