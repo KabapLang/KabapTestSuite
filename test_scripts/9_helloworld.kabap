@@ -1,0 +1,6 @@
+// Testing wouldn't be complete without this variable assignment and concatenation operator
+
+$hello = "Hello";
+$world = "world";
+
+output = $hello << ", " << $world << "!";

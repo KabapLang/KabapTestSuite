@@ -1,0 +1,3 @@
+:a;
+GOTO a;
+output="Fail";

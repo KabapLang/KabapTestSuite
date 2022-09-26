@@ -1,0 +1,6 @@
+$i=0;
+:a;
+$i=$i+1;
+if $i<2000;
+goto a;
+output=$i;

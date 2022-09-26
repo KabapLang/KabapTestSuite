@@ -1,0 +1,119 @@
+$bucket0=0;
+$bucket1=0;
+$bucket2=0;
+$bucket3=0;
+$bucket4=0;
+$bucket5=0;
+$bucket6=0;
+$bucket7=0;
+$bucket8=0;
+$bucket9=0;
+
+$i=0;
+:start;
+$bucket=kabap.random%10;
+
+if $bucket==0;
+$bucket0=$bucket0+1;
+
+if $bucket==1;
+$bucket1=$bucket1+1;
+
+if $bucket==2;
+$bucket2=$bucket2+1;
+
+if $bucket==3;
+$bucket3=$bucket3+1;
+
+if $bucket==4;
+$bucket4=$bucket4+1;
+
+if $bucket==5;
+$bucket5=$bucket5+1;
+
+if $bucket==6;
+$bucket6=$bucket6+1;
+
+if $bucket==7;
+$bucket7=$bucket7+1;
+
+if $bucket==8;
+$bucket8=$bucket8+1;
+
+if $bucket==9;
+$bucket9=$bucket9+1;
+
+$i=$i+1;
+if $i<2000;
+goto start;
+
+$sum=$bucket0+$bucket1+$bucket2+$bucket3+$bucket4+$bucket5+$bucket6+$bucket7+$bucket8+$bucket9;
+$mean=$sum/10;
+$lower=$mean*0.75;
+$upper=$mean*1.25;
+
+if $bucket0<$lower;
+goto distribution_error;
+
+if $bucket0>$upper;
+goto distribution_error;
+
+if $bucket1<$lower;
+goto distribution_error;
+
+if $bucket1>$upper;
+goto distribution_error;
+
+if $bucket2<$lower;
+goto distribution_error;
+
+if $bucket2>$upper;
+goto distribution_error;
+
+if $bucket3<$lower;
+goto distribution_error;
+
+if $bucket3>$upper;
+goto distribution_error;
+
+if $bucket4<$lower;
+goto distribution_error;
+
+if $bucket4>$upper;
+goto distribution_error;
+
+if $bucket5<$lower;
+goto distribution_error;
+
+if $bucket5>$upper;
+goto distribution_error;
+
+if $bucket6<$lower;
+goto distribution_error;
+
+if $bucket6>$upper;
+goto distribution_error;
+
+if $bucket7<$lower;
+goto distribution_error;
+
+if $bucket7>$upper;
+goto distribution_error;
+
+if $bucket8<$lower;
+goto distribution_error;
+
+if $bucket8>$upper;
+goto distribution_error;
+
+if $bucket9<$lower;
+goto distribution_error;
+
+if $bucket9>$upper;
+goto distribution_error;
+
+output="Distribution acceptably symmetric";
+break;
+
+:distribution_error;
+output="Distribution unacceptably asymmetric: lower="<<$lower<<" upper="<<$upper<<" b0="<<$bucket0<<" b1="<<$bucket1<<" b2="<<$bucket2<<" b3="<<$bucket3<<" b4="<<$bucket4<<" b5="<<$bucket5<<" b6="<<$bucket6<<" b7="<<$bucket7<<" b8="<<$bucket8<<" b9="<<$bucket9;

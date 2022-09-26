@@ -1,0 +1,6 @@
+$a="";
+$b=test.instantiated;
+if $b>1523456789000;
+$a=$a<<"Pass ";
+$a=$a<<test.foo;
+output=$a;

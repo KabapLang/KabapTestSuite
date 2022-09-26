@@ -1,0 +1,19 @@
+$i=0;
+:start;
+$random=kabap.random;
+
+if $random<0;
+goto range_error;
+
+if $random>9999;
+goto range_error;
+
+$i=$i+1;
+if $i<10000;
+goto start;
+
+output="Range within bounds";
+break;
+
+:range_error;
+output="Range outside bounds:"<<$random;

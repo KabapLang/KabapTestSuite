@@ -1,0 +1,12 @@
+kabap.character="\n";
+output=output<<kabap.ordinal<<" ";
+kabap.character="\r";
+output=output<<kabap.ordinal<<" ";
+kabap.character="\t";
+output=output<<kabap.ordinal<<" ";
+kabap.character="\v";
+output=output<<kabap.ordinal<<" ";
+kabap.character="\f";
+output=output<<kabap.ordinal<<" ";
+kabap.character="\0";
+output=output<<kabap.ordinal;

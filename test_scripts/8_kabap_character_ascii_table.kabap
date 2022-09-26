@@ -1,0 +1,7 @@
+$i=0;
+:loop;
+kabap.ordinal=$i;
+output=output<<kabap.character;
+$i=$i+1;
+if $i<256;
+goto loop;

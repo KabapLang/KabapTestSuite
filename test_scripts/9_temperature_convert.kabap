@@ -1,0 +1,29 @@
+// Temperature conversion from degrees C to F and vice versa
+
+$temp = 26;
+$unit = "C";
+
+if $unit == "C";
+	goto ctof;
+if $unit == "F";
+	goto ftoc;
+
+output = "Could not determine conversion type.";
+break;
+
+:ctof;
+	$output = $temp * 1.8;
+	$output = $output + 32;
+	$output = $output << "°F";
+	goto finish;
+break;
+
+:ftoc;
+	$output = $temp - 32;
+	$output = $output / 1.8;
+	$output = $output << "°C";
+	goto finish;
+break;
+
+:finish;
+	output = $output;

@@ -1,0 +1,12 @@
+// A fixed-count iterative loop
+
+$out = "";
+
+$i = 0;
+:start;
+	$out = $out << $i << " ";
+	$i = $i + 1;
+	if $i < 10;
+		goto start;
+
+output = $out;

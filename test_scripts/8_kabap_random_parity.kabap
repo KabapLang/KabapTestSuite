@@ -1,0 +1,28 @@
+$odd=0;
+$even=0;
+
+:start;
+$parity=kabap.random%2;
+
+if $parity==0;
+$even=$even+1;
+
+if $parity==1;
+$odd=$odd+1;
+
+if $even+$odd<1000;
+goto start;
+
+$ratio=$even/$odd;
+
+if $ratio<0.75;
+goto parity_error;
+
+if $ratio>1.25;
+goto parity_error;
+
+output="Parity acceptably symmetric";
+break;
+
+:parity_error;
+output="Parity unacceptably asymmetric: Even="<<$even<<" Odd="<<$odd<<" Ratio="<<$ratio;

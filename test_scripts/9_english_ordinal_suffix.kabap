@@ -1,0 +1,21 @@
+// Calculate the English ordinal suffix for $number
+
+$number = 102;
+
+$ordinal = $number % 10;
+$tenskip = $number - $ordinal;
+
+$suffix = "th";
+
+if $tenskip % 100 != 10; {
+	if $ordinal == 1;
+		$suffix = "st";
+
+	if $ordinal == 2;
+		$suffix = "nd";
+
+	if $ordinal == 3;
+		$suffix = "rd";
+}
+
+output = $number << $suffix;

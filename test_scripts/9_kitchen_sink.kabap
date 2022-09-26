@@ -1,0 +1,114 @@
+// Test every aspect of Kabap language, including this comment
+
+// Reference assignment numeric (preempt an early exit)
+output = 1;
+
+// Variable assignment string
+$start = ">";
+
+// Variable assignment variable
+$result = $start;
+
+// Variable assignment numeric
+$a = 3;
+
+// Variable assignment reference
+$b = kabap.version;
+
+// All mathematical operators
+$c = $b * 2;
+$c = $c + $a;
+$c = $c++;
+$c = $c * 2;
+$c = $c - 1;
+$c = $c--;
+$c = $c / 2;
+$c = $c ^ 3;
+$c = $c % 100;
+$c = $c + $a;
+$c = $c % 6;
+
+// All conditional flow with comparator operators
+if $c == 4;
+	$result = $result << $c << " ";
+
+if $c < 4;
+	$result = $result << "✘";
+
+if $c <= 4;
+	$result = $result << "✓";
+
+if $c >= 4;
+	$result = $result << "✓";
+
+if $c > 4;
+	$result = $result << "✘";
+
+if $c != 4;
+	$result = $result << "✘";
+
+if $c == "4"; {
+	// Block condition
+	$result = $result << "✓";
+	$result = $result << "✓";
+}
+
+// Goto flow with label
+$i = 0;
+:start;
+	$i = $i++;
+
+	$result = $result << "✓";
+
+	if $i < 10;
+		goto start;
+
+// Decimal scale
+kabap.scale = 12;
+$c = 1 / 3;
+
+if $c == 0.333333333333;
+	$result = $result << "✓";
+
+if $c != 0.333333333333;
+	$result = $result << "✘";
+
+// Random numbers
+$c = kabap.random;
+
+if $c == kabap.random;
+	$result = $result << "✘";
+
+if $c != kabap.random;
+	$result = $result << "✓";
+
+// Reference unknown
+output = "✘";
+$d = 1;
+unknown.reference;
+
+// Catch did not goto user error handler
+if $d == 1;
+	$result = $result << "✘";
+
+// User error handler
+:error;
+$d = $d + 1;
+
+if $d == 2;
+	resume;
+
+$result = $result << "✓";
+
+// Reference assignment variable
+output = $result;
+
+// stderr and stdout read-writable
+error = output;
+
+// Exit flow
+break;
+
+// Reference assignment string (catch failed break)
+output = "FAIL";
+

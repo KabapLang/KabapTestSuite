@@ -1,0 +1,4 @@
+output="Pass";
+goto A;
+output="Fail";
+:a;
