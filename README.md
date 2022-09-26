@@ -16,6 +16,8 @@ It is important that you ensure your platform specific tests are successfully pa
     This directory contains tests in human readable format.
 3. test_tokens/
     This directory contains tests in tokenized format.
+4. [CHANGELOG.md](CHANGELOG.md)
+    The list of changes to the test suite.
 
 
 ## A note on tokens
